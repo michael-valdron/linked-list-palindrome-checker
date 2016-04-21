@@ -18,7 +18,7 @@ bool is_panlindrome(ListNode* head) {
     ListNode* current = head;
 
     for (int i = 0; current->next_node != NULL && i < MAX_SIZE; i++) {
-        char_array[i] = current;
+        char_array[i] = current->val;
         current = current->next_node;
     }
 
